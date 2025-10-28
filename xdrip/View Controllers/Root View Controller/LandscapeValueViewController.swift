@@ -54,7 +54,7 @@ class LandscapeValueViewController: UIViewController {
         //   and width of stackview with just the minutes, 60% of total width?
         minutesAndDiffLabelStackView.translatesAutoresizingMaskIntoConstraints = false
         minutesAndDiffLabelStackView.heightAnchor.constraint(equalTo: allViewsStackView.heightAnchor, multiplier: UserDefaults.standard.showClockWhenScreenIsLocked ? 0.18 : 0.3).isActive = true
-        minutesLabelStackView.widthAnchor.constraint(equalTo: minutesAndDiffLabelStackView.widthAnchor, multiplier: 0.6).isActive = true
+        minutesLabelStackView.widthAnchor.constraint(equalTo: minutesAndDiffLabelStackView.widthAnchor, multiplier: 0.8).isActive = true
         
         if UserDefaults.standard.showClockWhenScreenIsLocked {
             // set up the clock view
