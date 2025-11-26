@@ -53,7 +53,7 @@ class LandscapeValueViewController: UIViewController {
         // set height of stackview with the minutes and diff labels to 20% of toal screen height, the remaining 80% is used to show the value and trend
         //   and width of stackview with just the minutes, 60% of total width?
         minutesAndDiffLabelStackView.translatesAutoresizingMaskIntoConstraints = false
-        minutesAndDiffLabelStackView.heightAnchor.constraint(equalTo: allViewsStackView.heightAnchor, multiplier: UserDefaults.standard.showClockWhenScreenIsLocked ? 0.16 : 0.3).isActive = true
+        minutesAndDiffLabelStackView.heightAnchor.constraint(equalTo: allViewsStackView.heightAnchor, multiplier: UserDefaults.standard.showClockWhenScreenIsLocked ? 0.12 : 0.2).isActive = true
         minutesLabelStackView.widthAnchor.constraint(equalTo: minutesAndDiffLabelStackView.widthAnchor, multiplier: 0.6).isActive = true
         
         if UserDefaults.standard.showClockWhenScreenIsLocked {
